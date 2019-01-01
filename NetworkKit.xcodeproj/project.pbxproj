@@ -12,6 +12,7 @@
 		32113B8C21DB02D400DE761D /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 32113B7E21DB02D300DE761D /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32113B9721DB04A700DE761D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 32113B9521DB04A700DE761D /* LICENSE */; };
 		32113B9821DB04A700DE761D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32113B9621DB04A700DE761D /* README.md */; };
+		32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		32113B8B21DB02D400DE761D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32113B9521DB04A700DE761D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		32113B9621DB04A700DE761D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+NetworkKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		32113B7D21DB02D300DE761D /* NetworkKit */ = {
 			isa = PBXGroup;
 			children = (
+				32113B9921DB052700DE761D /* Sources */,
 				32113B7E21DB02D300DE761D /* NetworkKit.h */,
 				32113B7F21DB02D300DE761D /* Info.plist */,
 			);
@@ -90,6 +93,22 @@
 				32113B8B21DB02D400DE761D /* Info.plist */,
 			);
 			path = NetworkKitTests;
+			sourceTree = "<group>";
+		};
+		32113B9921DB052700DE761D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32113B9A21DB053900DE761D /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		32113B9A21DB053900DE761D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +173,7 @@
 				TargetAttributes = {
 					32113B7A21DB02D300DE761D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					32113B8321DB02D400DE761D = {
 						CreatedOnToolsVersion = 10.1;
@@ -202,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +370,7 @@
 		32113B9021DB02D400DE761D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -366,6 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.synthelytics.NetworkKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,6 +397,7 @@
 		32113B9121DB02D400DE761D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -399,6 +423,7 @@
 		32113B9321DB02D400DE761D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83PU8ZQUC5;
 				INFOPLIST_FILE = NetworkKitTests/Info.plist;
@@ -417,6 +442,7 @@
 		32113B9421DB02D400DE761D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83PU8ZQUC5;
 				INFOPLIST_FILE = NetworkKitTests/Info.plist;
