@@ -11,8 +11,10 @@
 
 import Foundation
 
+// MARK: - Public Protocol Declaration
+
 /// A type that computes a `URLRequest` instance for a defined API endpoint.
-protocol Endpoint {
+public protocol Endpoint {
     
     /// The base URL for the API as a string.
     var base: String { get }
@@ -28,7 +30,11 @@ protocol Endpoint {
     
 }
 
+// MARK: - Protocol Extension | Additions
+
 extension Endpoint {
+    
+    // MARK: Computed Instance Properties
     
     /**
      An instance of `URLComponents` containing the base URL, path, and query
@@ -45,7 +51,7 @@ extension Endpoint {
     }
     
     /**
-     An instance of `URLRequest` encapsulating the endpoint URL. This URL is
+     An instance of `URLRequest` encapsulating the endpoint URL, which is
      obtained through the `urlComponents` object.
      */
     var request: URLRequest {
@@ -55,11 +61,24 @@ extension Endpoint {
         return URLRequest(url: url)
     }
     
+    // MARK: Instance Methods
+    
+    /**
+     Creates an instance of `URLRequest` encapsulating both the endpoint URL,
+     which is obtained through the `urlComponents` object, and an OAuth token.
+     
+     The OAuth token is stored in the HTTP `Authorization` request header field
+     of the `URLRequeest` instance as a `Bearer` token.
+     
+     - Parameters:
+         - oauthToken: An OAuth token.
+     - Returns: An instance of `URLRequest` containing an OAuth token in the
+     HTTP `Authorization` request header field.
+     */
     func requestWithAuthorizationHeader(oauthToken: String) -> URLRequest {
         var oauthRequest = request
         
         oauthRequest.addValue("Bearer \(oauthToken)", forHTTPHeaderField: "Authorization")
-
         
         return oauthRequest
     }
