@@ -13,6 +13,7 @@
 		32113B9721DB04A700DE761D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 32113B9521DB04A700DE761D /* LICENSE */; };
 		32113B9821DB04A700DE761D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32113B9621DB04A700DE761D /* README.md */; };
 		32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */; };
+		32113BA021DB075200DE761D /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9F21DB075200DE761D /* PendingOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		32113B9521DB04A700DE761D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		32113B9621DB04A700DE761D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+NetworkKit.swift"; sourceTree = "<group>"; };
+		32113B9F21DB075200DE761D /* PendingOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				32113B9A21DB053900DE761D /* Extensions */,
+				32113B9D21DB071800DE761D /* Models */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -109,6 +112,14 @@
 				32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32113B9D21DB071800DE761D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32113B9F21DB075200DE761D /* PendingOperations.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */,
+				32113BA021DB075200DE761D /* PendingOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
