@@ -14,6 +14,7 @@
 		32113B9821DB04A700DE761D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32113B9621DB04A700DE761D /* README.md */; };
 		32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */; };
 		32113BA021DB075200DE761D /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9F21DB075200DE761D /* PendingOperations.swift */; };
+		32113BA321DB082100DE761D /* QueryItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA221DB082100DE761D /* QueryItemProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		32113B9621DB04A700DE761D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+NetworkKit.swift"; sourceTree = "<group>"; };
 		32113B9F21DB075200DE761D /* PendingOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
+		32113BA221DB082100DE761D /* QueryItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				32113B9921DB052700DE761D /* Sources */,
-				32113B7E21DB02D300DE761D /* NetworkKit.h */,
 				32113B7F21DB02D300DE761D /* Info.plist */,
 			);
 			path = NetworkKit;
@@ -100,8 +101,10 @@
 		32113B9921DB052700DE761D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				32113B7E21DB02D300DE761D /* NetworkKit.h */,
 				32113B9A21DB053900DE761D /* Extensions */,
 				32113B9D21DB071800DE761D /* Models */,
+				32113BA121DB080600DE761D /* Protocols */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -120,6 +123,14 @@
 				32113B9F21DB075200DE761D /* PendingOperations.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		32113BA121DB080600DE761D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				32113BA221DB082100DE761D /* QueryItemProvider.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32113BA321DB082100DE761D /* QueryItemProvider.swift in Sources */,
 				32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */,
 				32113BA021DB075200DE761D /* PendingOperations.swift in Sources */,
 			);

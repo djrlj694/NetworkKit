@@ -2,7 +2,7 @@
 //  PendingOperations.swift
 //  NetworkKit
 //
-//  Created by Robert L. Jones on 12/27/18.
+//  Created by Robert L. Jones on 12/31/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFERENCES:
