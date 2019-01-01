@@ -16,6 +16,7 @@
 		32113BA021DB075200DE761D /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9F21DB075200DE761D /* PendingOperations.swift */; };
 		32113BA321DB082100DE761D /* QueryItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA221DB082100DE761D /* QueryItemProvider.swift */; };
 		32113BA521DBB3E400DE761D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA421DBB3E400DE761D /* APIError.swift */; };
+		32113BA721DBB5A400DE761D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA621DBB5A400DE761D /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		32113B9F21DB075200DE761D /* PendingOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 		32113BA221DB082100DE761D /* QueryItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemProvider.swift; sourceTree = "<group>"; };
 		32113BA421DBB3E400DE761D /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		32113BA621DBB5A400DE761D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		32113BA121DB080600DE761D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				32113BA621DBB5A400DE761D /* Endpoint.swift */,
 				32113BA221DB082100DE761D /* QueryItemProvider.swift */,
 			);
 			path = Protocols;
@@ -251,6 +254,7 @@
 				32113BA521DBB3E400DE761D /* APIError.swift in Sources */,
 				32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */,
 				32113BA021DB075200DE761D /* PendingOperations.swift in Sources */,
+				32113BA721DBB5A400DE761D /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
