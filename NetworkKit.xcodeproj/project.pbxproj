@@ -10,6 +10,8 @@
 		32113B8521DB02D400DE761D /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32113B7B21DB02D300DE761D /* NetworkKit.framework */; };
 		32113B8A21DB02D400DE761D /* NetworkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B8921DB02D400DE761D /* NetworkKitTests.swift */; };
 		32113B8C21DB02D400DE761D /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 32113B7E21DB02D300DE761D /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32113B9721DB04A700DE761D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 32113B9521DB04A700DE761D /* LICENSE */; };
+		32113B9821DB04A700DE761D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32113B9621DB04A700DE761D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		32113B8421DB02D400DE761D /* NetworkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32113B8921DB02D400DE761D /* NetworkKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKitTests.swift; sourceTree = "<group>"; };
 		32113B8B21DB02D400DE761D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32113B9521DB04A700DE761D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		32113B9621DB04A700DE761D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		32113B7121DB02D300DE761D = {
 			isa = PBXGroup;
 			children = (
+				32113B9521DB04A700DE761D /* LICENSE */,
+				32113B9621DB04A700DE761D /* README.md */,
 				32113B7D21DB02D300DE761D /* NetworkKit */,
 				32113B8821DB02D400DE761D /* NetworkKitTests */,
 				32113B7C21DB02D300DE761D /* Products */,
@@ -177,6 +183,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32113B9821DB04A700DE761D /* README.md in Resources */,
+				32113B9721DB04A700DE761D /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
