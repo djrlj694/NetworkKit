@@ -15,6 +15,7 @@
 		32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */; };
 		32113BA021DB075200DE761D /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B9F21DB075200DE761D /* PendingOperations.swift */; };
 		32113BA321DB082100DE761D /* QueryItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA221DB082100DE761D /* QueryItemProvider.swift */; };
+		32113BA521DBB3E400DE761D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA421DBB3E400DE761D /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		32113B9B21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+NetworkKit.swift"; sourceTree = "<group>"; };
 		32113B9F21DB075200DE761D /* PendingOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 		32113BA221DB082100DE761D /* QueryItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemProvider.swift; sourceTree = "<group>"; };
+		32113BA421DBB3E400DE761D /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		32113B9D21DB071800DE761D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32113BA421DBB3E400DE761D /* APIError.swift */,
 				32113B9F21DB075200DE761D /* PendingOperations.swift */,
 			);
 			path = Models;
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32113BA321DB082100DE761D /* QueryItemProvider.swift in Sources */,
+				32113BA521DBB3E400DE761D /* APIError.swift in Sources */,
 				32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */,
 				32113BA021DB075200DE761D /* PendingOperations.swift in Sources */,
 			);
