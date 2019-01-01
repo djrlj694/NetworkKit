@@ -2,7 +2,7 @@
 //  APIError.swift
 //  NetworkKit
 //
-//  Created by Robert L. Jones on 1/1/18.
+//  Created by Robert L. Jones on 1/1/19.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFERENCES:
