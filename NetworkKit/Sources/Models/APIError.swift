@@ -17,11 +17,13 @@
 
 import Foundation
 
+// MARK: - Public Enum Declaration
+
 /**
  An error that occurs during an attempt to retrieve or process a HTTP GET
  response from a REST API service.
  */
-enum APIError: Error {
+public enum APIError: Error {
     
     /// An indication that an HTTP GET request did not yield an HTTP reponse.
     case requestFailed
