@@ -19,6 +19,7 @@
 		32113BA721DBB5A400DE761D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA621DBB5A400DE761D /* Endpoint.swift */; };
 		32113BA921DC2F5900DE761D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BA821DC2F5900DE761D /* APIClient.swift */; };
 		32113BAC21DC46F900DE761D /* ResourceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32113BAB21DC46F900DE761D /* ResourceKit.framework */; };
+		32113BAE21DC4DDF00DE761D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113BAD21DC4DDF00DE761D /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		32113BA621DBB5A400DE761D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		32113BA821DC2F5900DE761D /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		32113BAB21DC46F900DE761D /* ResourceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ResourceKit.framework; sourceTree = "<group>"; };
+		32113BAD21DC4DDF00DE761D /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				32113BA421DBB3E400DE761D /* APIError.swift */,
 				32113B9F21DB075200DE761D /* PendingOperations.swift */,
+				32113BAD21DC4DDF00DE761D /* Result.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				32113BA521DBB3E400DE761D /* APIError.swift in Sources */,
 				32113B9C21DB05E100DE761D /* HTTPURLResponse+NetworkKit.swift in Sources */,
 				32113BA021DB075200DE761D /* PendingOperations.swift in Sources */,
+				32113BAE21DC4DDF00DE761D /* Result.swift in Sources */,
 				32113BA721DBB5A400DE761D /* Endpoint.swift in Sources */,
 				32113BA921DC2F5900DE761D /* APIClient.swift in Sources */,
 			);
