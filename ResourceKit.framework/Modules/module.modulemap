@@ -1,0 +1,11 @@
+framework module ResourceKit {
+  umbrella header "ResourceKit.h"
+
+  export *
+  module * { export * }
+}
+
+module ResourceKit.Swift {
+    header "ResourceKit-Swift.h"
+    requires objc
+}
