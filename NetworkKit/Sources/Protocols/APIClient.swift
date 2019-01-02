@@ -30,7 +30,10 @@ public protocol APIClient {
 
 public extension APIClient {
     
+    /// Specifies the type of a JSON object.
     typealias JSON = [String: AnyObject]
+    
+    /// Specifies the type of a JSON task completion handler.
     typealias JSONTaskCompletionHandler = (JSON?, APIError?) -> Void
     
 }
