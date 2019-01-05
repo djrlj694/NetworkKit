@@ -2,7 +2,7 @@
 //  HTTPURLResponse+NetworkKit.swift
 //  NetworkKit
 //
-//  Created by Robert L. Jones on 12/31/18.
+//  Created by Robert L. Jones on 1/5/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFEERENCES:
@@ -19,7 +19,7 @@ public extension HTTPURLResponse {
     // MARK: Enums
     
     /**
-     Constants indicating the response's HTTP status class.
+     Constants indicating the class of HTTP response status code.
      
      As tempting as it would be to define a `StatusCode` enum, it doesn't seem
      practical to do so.  Aside from the number of individual statuus codes to
@@ -28,22 +28,49 @@ public extension HTTPURLResponse {
      */
     enum StatusClass {
         
-        /// 1xx: The sequest was received, continuing the process.
+        /**
+         An indication that the request was received, continuing the process.
+         
+         Represents the class of HTTP response status codes of the form 1xx.
+         */
         case informational
-        
-        /// 2xx: The action was successfully received, understood, and accepted.
+ 
+        /**
+         An indication that the action was successfully received, understood,
+         and accepted.
+         
+         Represents the class of HTTP response status codes of the form 2xx.
+         */
         case success
         
-        /// 3xx: Further action must be taken in order to complete the request.
+        /**
+         An indication that further action must be taken in order to complete
+         the request.
+         
+         Represents the class of HTTP response status codes of the form 3xx.
+         */
         case redirection
-        
-        /// 4xx: The request contains bad syntax or cannot be fulfilled.
+ 
+        /**
+         An indication that the request contains bad syntax or cannot be
+         fulfilled.
+         
+         Represents the class of HTTP response status codes of the form 4xx.
+         */
         case clientError
-        
-        /// 5xx: The server failed to fulfill an apparently valid request.
+ 
+        /**
+         An indication that the server failed to fulfill an apparently valid
+         request.
+         
+         Represents the class of HTTP response status codes of the form 5xx.
+         */
         case serverError
-        
-        /// ???: The status code value is outside of the defined range.
+ 
+        /**
+         An indication that the status code value is outside of the defined
+         range.
+         */
         case undefined
     }
     
