@@ -31,7 +31,7 @@ public extension HTTPURLResponse {
         /**
          An indication that the request was received, continuing the process.
          
-         Represents the class of HTTP response status codes of the form 1xx.
+         Represents the 1xx class of HTTP response status codes of the form.
          */
         case informational
  
@@ -39,7 +39,7 @@ public extension HTTPURLResponse {
          An indication that the action was successfully received, understood,
          and accepted.
          
-         Represents the class of HTTP response status codes of the form 2xx.
+         Represents the 2xx class of HTTP response status codes of the form.
          */
         case success
         
@@ -47,7 +47,7 @@ public extension HTTPURLResponse {
          An indication that further action must be taken in order to complete
          the request.
          
-         Represents the class of HTTP response status codes of the form 3xx.
+         Represents the 3xx class of HTTP response status codes.
          */
         case redirection
  
@@ -55,7 +55,7 @@ public extension HTTPURLResponse {
          An indication that the request contains bad syntax or cannot be
          fulfilled.
          
-         Represents the class of HTTP response status codes of the form 4xx.
+         Represents the 4xx class of HTTP response status codes.
          */
         case clientError
  
@@ -63,13 +63,15 @@ public extension HTTPURLResponse {
          An indication that the server failed to fulfill an apparently valid
          request.
          
-         Represents the class of HTTP response status codes of the form 5xx.
+         Represents the 5xx class of HTTP response status codes.
          */
         case serverError
  
         /**
-         An indication that the status code value is outside of the defined
-         range.
+         An indication that the HTTP response status code value is outside of
+         the defined range of such codes.
+         
+         Represents no class of HTTP response status codes.
          */
         case undefined
     }
