@@ -2,7 +2,7 @@
 //  HTTPURLResponse+NetworkKit.swift
 //  NetworkKit
 //
-//  Created by Robert L. Jones on 1/5/18.
+//  Created by Robert L. Jones on 1/6/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFEERENCES:
@@ -19,12 +19,13 @@ public extension HTTPURLResponse {
     // MARK: Enums
     
     /**
-     Constants indicating the class of HTTP response status code.
+     Constants indicating the class of HTTP response status codes.
      
      As tempting as it would be to define a `StatusCode` enum, it doesn't seem
-     practical to do so.  Aside from the number of individual statuus codes to
-     manage, there is the issue of language localization.  This is better
-     handled via the `HTTPURLResponse` method `localizedString(forStatusCode:)`.
+     practical to do so.  Aside from the number of individual status codes to
+     manage, there is the issue of language localization.  It is better in the
+     humble opinion of this developer to handle this via the `HTTPURLResponse`
+     method `localizedString(forStatusCode:)`.
      */
     enum StatusClass {
         
@@ -76,12 +77,15 @@ public extension HTTPURLResponse {
         case undefined
     }
     
-    /// Boolean value indicating whether the HTTP request succeeeded.
+    /**
+     Boolean value indicating whether the HTTP request succeeeded with a status
+     code of 200 (i.e., "OK").
+     */
     var isOK: Bool {
         return statusCode == 200
     }
     
-    /// The response's HTTP status class.
+    /// The HTTP response's class of status codes.
     var statusClass: StatusClass {
         switch statusCode {
         case 100..<200: return .informational
