@@ -1,6 +1,6 @@
 # Contributing to NetworkKit
 
-Contributions toward improving [NetworkKit](https://github.com/djrlj694/NetworkKit) (its source code, documentation, etc.) are welcome via GitHub's [pull request](https://github.com/djrlj694/NetworkKit/pull/new/master) process.  By submitting a pull request, you acknowledge and agree to the following:
+Contributions toward improving [NetworkKit](README.md) (its source code, documentation, etc.) are welcome via GitHub's [pull request](https://github.com/djrlj694/NetworkKit/pull/new/master) process.  By submitting a pull request, you acknowledge and agree to the following:
 
 1. You have the right to license your contribution to NetworkKit's project leader (djrlj694@gmail.com) and the NetworkKit community;
 2. Your contributions are licensed under the [MIT License](LICENSE.md).
