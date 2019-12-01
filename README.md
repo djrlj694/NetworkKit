@@ -94,4 +94,4 @@ NetworkKit is released under the [MIT License](LICENSE.md).
 
 ## References
 
-See [REFERENCES.md](REFERENCES.md) for a list of sources that were helpful or inspirational when learning new topics, troubleshooting bugs, authoring documentation, etc.
+API documentation, tutorials, and other online references and made portions of NetworkKit possible.  See [REFERENCES.md](REFERENCES.md) for a list of some of them.
